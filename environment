@@ -1,0 +1,17 @@
+export MASTER_IP=10.1.0.86
+export NODE_IP=10.1.0.87
+
+#service 
+export SERVICE_CIDR="10.254.0.0/16"            #service使用的虚拟ip
+export CLUSTER_KUBERNETES_SVC_IP="10.254.0.1"  #apiserver的service，会被pod访问
+export NODE_PORT_RANGE="30000-32767"           #nodeport类型的service分配的端口
+
+#for coredns & kubelet
+export CLUSTER_DNS_DOMAIN="cluster.local"      #域名后缀
+export CLUSTER_DNS_SVC_IP="10.254.0.2"         #dnsserver地址
+
+#pod 
+export CLUSTER_CIDR="172.30.0.0/16"            #pod网络分配的地址段
+
+#ETCD_IPS=(100.64.11.111)
+#NODE_IPS=(100.64.11.111)

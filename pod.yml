@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    run: test
+spec:
+  containers:
+  - name: nginx
+    image: docker.mirrors.ustc.edu.cn/library/nginx:1.14.2
