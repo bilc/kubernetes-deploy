@@ -43,7 +43,7 @@ ExecStart=${DIR}/kube-apiserver \\
   --kubelet-client-certificate=${DIR}/kubernetes.pem \\
   --kubelet-client-key=${DIR}/kubernetes-key.pem \\
   --kubelet-https=true \\
-  --runtime-config='api/all=true' \\
+  --runtime-config=api/all=true \\
   --service-account-key-file=${DIR}/service-account.pem \\
   --service-cluster-ip-range=${SERVICE_CIDR} \\
   --service-node-port-range=${NODE_PORT_RANGE} \\
