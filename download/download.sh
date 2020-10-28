@@ -19,7 +19,7 @@ wget https://k8s-deploy.bj.bcebos.com/k8s/cfssl-certinfo_1.4.1_linux_amd64
 wget https://k8s-deploy.bj.bcebos.com/k8s/etcd-v3.4.3-linux-amd64.tar.gz
 wget https://k8s-deploy.bj.bcebos.com/k8s/crictl-v1.18.0-linux-amd64.tar.gz 
 wget https://k8s-deploy.bj.bcebos.com/k8s/runc.amd64 
-#wget https://k8s-deploy.bj.bcebos.com/k8s/cni-plugins-linux-amd64-v0.8.6.tgz 
+wget https://k8s-deploy.bj.bcebos.com/k8s/cni-plugins-linux-amd64-v0.8.6.tgz 
 wget https://k8s-deploy.bj.bcebos.com/k8s/containerd-1.3.6-linux-amd64.tar.gz 
 wget https://k8s-deploy.bj.bcebos.com/k8s/kubernetes-server-linux-amd64.tar.gz  
 
@@ -48,8 +48,8 @@ mv crictl bin/
 mkdir bin/containerd
 tar -zxvf containerd-1.3.6-linux-amd64.tar.gz -C bin/containerd
 
-#mkdir bin/cni-plugins
-#tar -zxvf cni-plugins-linux-amd64-v0.8.6.tgz -C bin/cni-plugins
+mkdir bin/cni-plugins
+tar -zxvf cni-plugins-linux-amd64-v0.8.6.tgz -C bin/cni-plugins
 
 mv runc.amd64 bin/runc
 

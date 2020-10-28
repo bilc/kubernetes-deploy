@@ -1,7 +1,7 @@
 
 cat > kubernetes-csr.json <<EOF
 {
-  "CN": "system:kubelet-api-admin",
+  "CN": "kubernetes",
   "key": {
     "algo": "rsa",
     "size": 2048
@@ -9,7 +9,7 @@ cat > kubernetes-csr.json <<EOF
 
   "names": [
     {
-      "O": "system:kubelet-api-admin",
+      "O": "Kubernetes",
       "C": "china",
       "ST": "beijing",
       "L": "beijing",
