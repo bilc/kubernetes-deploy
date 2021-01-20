@@ -1,3 +1,4 @@
+set -x 
 cat > etcd-csr.json <<EOF
 {
   "CN": "etcd",
